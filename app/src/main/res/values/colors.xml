@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="recycled_litter">#00FF00</color>
+    <color name="non_recycled_litter">#FFFF00</color>
+    <color name="harmful_litter">#FF0000</color>
+    <color name="kitchen_litter">#0000FF</color>
+</resources>

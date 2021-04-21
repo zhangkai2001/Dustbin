@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Dustbin</string>
+    <string name="translate">切换翻译</string>
+
+    <string name="dust_wait">欢迎使用智能垃圾分类机器人</string>
+    <string name="recycled_litter">可回收垃圾</string>
+    <string name="non_recycled_litter">不可回收垃圾</string>
+    <string name="harmful_litter">有害垃圾</string>
+    <string name="kitchen_litter">厨余垃圾</string>
+</resources>
