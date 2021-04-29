@@ -4,10 +4,8 @@
 
     <item
             android:title="中文"
-            android:id="@+id/chinese"
-            android:icon="@drawable/ic_baseline_translate_24"/>
+        android:icon="@drawable/ic_baseline_translate_24"/>
     <item
             android:title="English"
-            android:id="@+id/English"
-            android:icon="@drawable/ic_baseline_translate_24"/>
+        android:icon="@drawable/ic_baseline_translate_24"/>
 </menu>

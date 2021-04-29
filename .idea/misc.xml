@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/kai/IntelliJIDEAProjects/Dustbin/app/src/main/res/layout/activity_setting.xml" value="0.38046875" />
+        <entry key="..\:/Users/kai/IntelliJIDEAProjects/Dustbin/app/src/main/res/layout/fragment_dustbin.xml" value="0.38046875" />
+        <entry key="..\:/Users/kai/IntelliJIDEAProjects/Dustbin/app/src/main/res/layout/fragment_electric.xml" value="0.38046875" />
+        <entry key="..\:/Users/kai/IntelliJIDEAProjects/Dustbin/app/src/main/res/layout/fragment_network.xml" value="0.38046875" />
+        <entry key="..\:/Users/kai/IntelliJIDEAProjects/Dustbin/app/src/main/res/layout/fragment_overwatch.xml" value="0.38046875" />
+        <entry key="..\:/Users/kai/IntelliJIDEAProjects/Dustbin/app/src/main/res/layout/fragment_sensor.xml" value="0.38046875" />
+        <entry key="..\:/Users/kai/IntelliJIDEAProjects/Dustbin/app/src/main/res/menu/exit_setting_menu.xml" value="0.38046875" />
+        <entry key="..\:/Users/kai/IntelliJIDEAProjects/Dustbin/app/src/main/res/menu/nav_menu.xml" value="0.38046875" />
+        <entry key="..\:/Users/kai/IntelliJIDEAProjects/Dustbin/app/src/main/res/menu/setting_menu.xml" value="0.38046875" />
+      </map>
+    </option>
+  </component>
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$" />
   </component>

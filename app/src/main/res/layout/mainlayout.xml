@@ -7,67 +7,58 @@
         android:layout_height="match_parent"
         tools:showIn="@layout/activity_main">
 
-    <Button
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:id="@+id/translate"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="16dp"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="16dp"
-            style="@style/TextAppearance.Design.CollapsingToolbar.Expanded"
-            android:background="@drawable/ic_baseline_translate_24"
-            android:onClick="translate"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="volume"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_baseline_volume_up_24"/>
+
+    <ImageButton
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#00000000"
+        android:onClick="translate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_translate_24" />
 
     <TextView
             android:text="@string/translate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView"
-            android:textSize="24sp"
+        android:textSize="24sp"
             android:visibility="invisible"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="60dp"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="16dp"/>
 
-    <SeekBar
-            android:layout_width="141dp"
-            android:layout_height="20dp"
-            android:id="@+id/volum"
-            android:layout_marginStart="8dp"
-            app:layout_constraintStart_toEndOf="@+id/volum_img"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="16dp"/>
-
     <ImageButton
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            app:srcCompat="@drawable/ic_baseline_settings_24"
-            android:id="@+id/setting"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:contentDescription="设置"
-            android:onClick="setting"/>
-
-    <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_baseline_volume_up_24"
-            android:id="@+id/volum_img"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="16dp"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="16dp"/>
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#00000000"
+        android:contentDescription="设置"
+        android:onClick="setting"
+        android:src="@drawable/ic_baseline_settings_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/linearLayout"
-            android:layout_weight="10"
+        android:layout_weight="10"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -77,42 +68,38 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 app:srcCompat="@drawable/ic_baseline_delete_outline_24"
-                android:id="@+id/recycled"
-                android:layout_weight="1"/>
+            android:layout_weight="1"/>
 
         <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 app:srcCompat="@drawable/ic_baseline_delete_outline_24"
-                android:id="@+id/non_recycled"
-                android:layout_weight="1"/>
+            android:layout_weight="1"/>
 
         <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 app:srcCompat="@drawable/ic_baseline_delete_outline_24"
-                android:id="@+id/harmful"
-                android:layout_weight="1"/>
+            android:layout_weight="1"/>
 
         <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 app:srcCompat="@drawable/ic_baseline_delete_outline_24"
-                android:id="@+id/kitchen"
-                android:layout_weight="1"/>
+            android:layout_weight="1"/>
+
     </LinearLayout>
 
     <TextView
-            android:text="@string/dust_wait"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/notice"
-            android:textSize="24sp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintVertical_bias="0.13999999"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dust_wait"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13999999" />
 
     <LinearLayout
             android:orientation="horizontal"
@@ -128,32 +115,28 @@
                 android:text="@string/recycled_litter"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView4"
-                android:layout_weight="1"
+            android:layout_weight="1"
                 android:gravity="center|top"/>
 
         <TextView
                 android:text="@string/non_recycled_litter"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:id="@+id/textView5"
-                android:layout_weight="1"
+            android:layout_weight="1"
                 android:gravity="center"/>
 
         <TextView
                 android:text="@string/harmful_litter"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView6"
-                android:layout_weight="1"
+            android:layout_weight="1"
                 android:gravity="bottom|center|top"/>
 
         <TextView
                 android:text="@string/kitchen_litter"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView7"
-                android:layout_weight="1"
+            android:layout_weight="1"
                 android:gravity="center|top"/>
     </LinearLayout>
 

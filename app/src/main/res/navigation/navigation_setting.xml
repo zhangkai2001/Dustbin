@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/overwatch">
+    <fragment
+        android:id="@+id/electric"
+        android:name="com.kai.dustbin.electric"
+        android:label="fragment_electric"
+        tools:layout="@layout/fragment_electric" />
+    <fragment
+        android:id="@+id/network"
+        android:name="com.kai.dustbin.network"
+        android:label="fragment_network"
+        tools:layout="@layout/fragment_network" />
+    <fragment
+        android:id="@+id/overwatch"
+        android:name="com.kai.dustbin.overwatch"
+        android:label="fragment_overwatch"
+        tools:layout="@layout/fragment_overwatch" />
+    <fragment
+        android:id="@+id/sensor"
+        android:name="com.kai.dustbin.sensor"
+        android:label="fragment_sensor"
+        tools:layout="@layout/fragment_sensor" />
+    <fragment
+        android:id="@+id/dustbin"
+        android:name="com.kai.dustbin.dustbin"
+        android:label="fragment_dustbin"
+        tools:layout="@layout/fragment_dustbin" />
+</navigation>

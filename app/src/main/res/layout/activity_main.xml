@@ -10,14 +10,12 @@
 
     <include
             layout="@layout/mainlayout"
-            android:id="@+id/translate"
-            android:onClick="translate"/>
+        android:onClick="translate"/>
 
     <com.google.android.material.navigation.NavigationView
             android:layout_width="256dp"
             android:layout_height="match_parent"
             android:layout_gravity="start"
-            app:menu="@menu/nav_menu"
-            android:id="@+id/nav_main"/>
+            app:menu="@menu/nav_menu" />
 
 </androidx.drawerlayout.widget.DrawerLayout>
