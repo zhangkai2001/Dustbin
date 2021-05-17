@@ -14,13 +14,14 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MainActivity extends AppCompatActivity
 {
-    MediaPlayer mediaPlayer=MediaPlayer.create(this,R.raw.mediatest);
+    MediaPlayer mediaPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mediaPlayer= MediaPlayer.create(this,R.raw.mediatest);
         mediaPlayer.start();
         mediaPlayer.setLooping(true);
     }
@@ -58,7 +59,13 @@ public class MainActivity extends AppCompatActivity
             mediaPlayer.start();
             voloum.setImageResource(R.drawable.ic_baseline_volume_up_24);
         }
-
     }
 
+    @Override
+    protected void onDestroy()
+    {
+        super.onDestroy();
+        if(mediaPlayer!=null)
+            mediaPlayer.release();
+    }
 }
