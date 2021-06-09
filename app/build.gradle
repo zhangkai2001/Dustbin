@@ -2,8 +2,17 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 android {
+    signingConfigs {
+        debug {
+            storeFile file('C:\\Users\\kai\\IntelliJIDEAProjects\\Dustbin\\sign\\platform.keystore')
+            storePassword 'android'
+            keyAlias 'platform'
+            keyPassword 'android'
+        }
+    }
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
+    ndkVersion '22.1.7171670'
 
     defaultConfig {
         applicationId "com.kai.dustbin"
@@ -11,10 +20,17 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
-
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi','arm64-v8a' //, 'armeabi','x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
+    sourceSets{
+        main{
+            jniLibs.srcDirs= ["libs"]
+        }
+    }
     buildTypes {
         release {
             minifyEnabled false

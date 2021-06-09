@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <group>
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
         <item
             android:id="@+id/overwatch"
             android:icon="@drawable/ic_baseline_assignment_24"
             android:title="概览" />
     </group>
-    <group>
+    <group android:id="@+id/group2"
+        android:checkableBehavior="single">
         <item
             android:id="@+id/electric"
             android:icon="@drawable/ic_baseline_electrical_services_24"

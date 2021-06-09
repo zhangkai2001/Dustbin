@@ -1,10 +1,20 @@
 <resources>
     <string name="app_name">Dustbin</string>
     <string name="translate">切换翻译</string>
+    <string name="error">请联系工作人员</string>
 
     <string name="dust_wait">欢迎使用智能垃圾分类机器人</string>
     <string name="recycled_litter">可回收垃圾</string>
     <string name="non_recycled_litter">不可回收垃圾</string>
     <string name="harmful_litter">有害垃圾</string>
     <string name="kitchen_litter">厨余垃圾</string>
+    <string name="kitchen_button">厨余垃圾特别投放</string>
+
+    <string name="confirm"> 确定</string>
+    <string name="cancel">取消</string>
+    <string name="start_throw">开始投放垃圾</string>
+    <string name="recycle_throw">您确定投放的是可回收垃圾吗？</string>
+    <string name="non_recycle_throw">您确定投放的是不可回收垃圾吗？</string>
+    <string name="harmful_throw">您确定投放的是有害垃圾吗？</string>
+    <string name="kitchen_throw">厨余垃圾投放成功</string>
 </resources>
