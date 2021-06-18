@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dustbin</string>
+    <string name="translate">change language</string>
+    <string name="dust_wait">Welcome</string>
+    <string name="error">error</string>
+    <string name="recycled_litter">Recyclable</string>
+    <string name="non_recycled_litter">Non-recyclable</string>
+    <string name="harmful_litter">Harmful</string>
+    <string name="kitchen_litter">Kitchen waste</string>
+    <string name="kitchen_button">Press this button to drop kitchen waste</string>
+    <string name="confirm">confirm</string>
+    <string name="cancel">cancel</string>
+    <string name="start_throw">Start</string>
+    <string name="recycle_throw">Is it recyclable?</string>
+    <string name="non_recycle_throw">Is it non-recycleable?</string>
+    <string name="harmful_throw">Is it harmful?</string>
+    <string name="kitchen_throw">Kitchen waste confirmed.</string>
+    <string name="too_far">Please approach to use</string>
+</resources>

@@ -17,4 +17,5 @@
     <string name="non_recycle_throw">您确定投放的是不可回收垃圾吗？</string>
     <string name="harmful_throw">您确定投放的是有害垃圾吗？</string>
     <string name="kitchen_throw">厨余垃圾投放成功</string>
+    <string name="too_far">请接近以使用</string>
 </resources>
